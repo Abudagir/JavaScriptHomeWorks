@@ -1,13 +1,11 @@
 // 1
 console.log("Завдання 1");
 const myArray = [7, 2, 10, 15, 50, 77, 3];
-myArray.forEach(function (element) {
-  console.log(element);
-});
+myArray.forEach((element) => console.log(element));
 
 console.log("Перевірка які елементи > 10");
 
-myArray.forEach(function (element) {
+myArray.forEach((element) => {
   if (element > 10) {
     console.log(element);
   }
@@ -15,9 +13,9 @@ myArray.forEach(function (element) {
 
 // 2
 console.log("Завдання 2");
-function findItem(array, item) {
+const findItem = (array, item) => {
   console.log(array.includes(item));
-}
+};
 
 findItem(myArray, 10);
 
@@ -26,15 +24,11 @@ console.log("Завдання 3");
 
 const users = ["user", "user1", "user10", "user100", "user1000"];
 
-const firstUser = users.find(function (user) {
-  return user.length > 4;
-});
+const firstUser = users.find((user) => user.length > 4);
 
 console.log(firstUser);
 
 // 4
 console.log("Завдання 4");
-const filterUser = users.filter(function (user) {
-  return user.length > 4;
-});
+const filterUser = users.filter((user) => user.length > 4);
 console.log(filterUser);
