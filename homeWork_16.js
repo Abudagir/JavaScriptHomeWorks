@@ -19,4 +19,3 @@ const handleContainerClick = (e) => {
   }
   value.innerHTML = count;
 };
-container.addEventListener("click", handleContainerClick);
